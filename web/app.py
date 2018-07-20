@@ -35,6 +35,10 @@ class ReusableForm(Form):
 @app.route("/resume", methods=['GET', 'POST'])
 def res():
     return render_template('resume.html')
+    
+@app.route("/creators", methods=['GET', 'POST'])
+def creators():
+    return render_template('creators.html')
 
 
 @app.route("/heatmap", methods=['GET', 'POST'])
